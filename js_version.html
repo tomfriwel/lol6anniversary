@@ -116,21 +116,16 @@
 </body>
 
 </html>
-
 <script>
-    let i = 0
     let div = document.getElementsByClassName('animate_div')[0]
 
-    let className = 'ans_btn' + i
-
+    let i = 0
     const run = function () {
-        div.classList.remove(className)
-        i = i > 23 ? 0 : i+1
-        className = 'ans_btn' + i
-        div.classList.add(className)
+        i = i > 23 ? 0 : i + 1
+
+        div.style.backgroundPosition = -i % 3 * 280 + 'px ' + -Math.floor(i / 3) * 90 + 'px'
 
         setTimeout(run, 50)
     }
-
     run()
 </script>
