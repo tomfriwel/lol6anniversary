@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <style>
+        .animate_div {
+            width: 280px;
+            height: 90px;
+            background-image: url(./images/btn1_sprite.png);
+            background-repeat: no-repeat;
+            /* transition-duration: 1s; */
+        }
+
+        .my_div {
+            width: 100px;
+            height: 100px;
+            background-image: url(./images/bg.png);
+            background-repeat: no-repeat;
+            /* transition-duration: 1s; */
+        }
+
+        .animate_div.ans_btn1 {
+            background-position: 0px 0;
+        }
+
+        .animate_div.ans_btn2 {
+            background-position: -280px 0;
+        }
+
+        .animate_div.ans_btn3 {
+            background-position: -560px 0;
+        }
+
+        .animate_div.ans_btn4 {
+            background-position: 0 -90px;
+        }
+
+        .animate_div.ans_btn5 {
+            background-position: -280px -90px;
+        }
+
+        .animate_div.ans_btn6 {
+            background-position: -560px -90px;
+        }
+
+        .animate_div.ans_btn7 {
+            background-position: 0 -180px;
+        }
+
+        .animate_div.ans_btn8 {
+            background-position: -280px -180px;
+        }
+
+        .animate_div.ans_btn9 {
+            background-position: -560px -180px;
+        }
+
+        .animate_div.ans_btn10 {
+            background-position: 0 -270px;
+        }
+
+        .animate_div.ans_btn11 {
+            background-position: -280px -270px;
+        }
+
+        .animate_div.ans_btn12 {
+            background-position: -560px -270px;
+        }
+
+        .animate_div.ans_btn13 {
+            background-position: 0 -360px;
+        }
+
+        .animate_div.ans_btn14 {
+            background-position: -280px -360px;
+        }
+
+        .animate_div.ans_btn15 {
+            background-position: -560px -360px;
+        }
+
+        .animate_div.ans_btn16 {
+            background-position: 0 -450px;
+        }
+
+        .animate_div.ans_btn17 {
+            background-position: -280px -450px;
+        }
+
+        .animate_div.ans_btn18 {
+            background-position: -560px -450px;
+        }
+
+        .animate_div.ans_btn19 {
+            background-position: 0 -540px;
+        }
+
+        .animate_div.ans_btn20 {
+            background-position: -280px -540px;
+        }
+
+        .animate_div.ans_btn21 {
+            background-position: -560px -540px;
+        }
+
+        .animate_div.ans_btn22 {
+            background-position: 0 -630px;
+        }
+
+        .animate_div.ans_btn23 {
+            background-position: -280px -630px;
+        }
+
+        .animate_div.ans_btn24 {
+            background-position: -560px -630px;
+        }
+
+        .animate_div.ans_btn25 {
+            background-position: 0 -720px;
+        }
+
+        .my_div.bg1 {
+            background-position: 0px 0px;
+        }
+
+        .my_div.bg2 {
+            background-position: -100px 0px;
+        }
+
+        .my_div.bg3 {
+            background-position: -200px 0px;
+        }
+
+        .my_div.bg4 {
+            background-position: -300px 0px;
+        }
+
+        .my_div.bg5 {
+            background-position: -400px 0px;
+        }
+
+        .my_div.bg6 {
+            background-position: -500px 0px;
+        }
+
+        .my_div.bg7 {
+            background-position: -600px 0px;
+        }
+
+        .my_div.bg8 {
+            background-position: -700px 0px;
+        }
+
+        .my_div.bg9 {
+            background-position: -800px 0px;
+        }
+
+        .my_div.bg10 {
+            background-position: -900px 0px;
+        }
+
+        .my_div.bg11 {
+            background-position: -1000px 0px;
+        }
+
+        .my_div.bg12 {
+            background-position: -900px 0px;
+        }
+
+        .my_div.bg13 {
+            background-position: -800px 0px;
+        }
+
+        .my_div.bg14 {
+            background-position: -700px 0px;
+        }
+
+        .my_div.bg15 {
+            background-position: -600px 0px;
+        }
+
+        .my_div.bg16 {
+            background-position: -500px 0px;
+        }
+
+        .my_div.bg17 {
+            background-position: -400px 0px;
+        }
+
+        .my_div.bg18 {
+            background-position: -300px 0px;
+        }
+
+        .my_div.bg19 {
+            background-position: -200px 0px;
+        }
+
+        .my_div.bg20 {
+            background-position: -100px 0px;
+        }
+        /* .my_div.bg21 {
+            background-position: 0px 0px; 
+        }
+        .my_div.bg22 {
+            background-position: -1000px 0px; 
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="animate_div"></div>
+    <div class="my_div"></div>
+</body>
+
+</html>
+<script>
+// let div = document.getElementsByClassName('animate_div')[0]
+
+// let i = 0
+// const run = function () {
+//     i = i > 23 ? 0 : i+1
+
+//     div.style.backgroundPosition = -i%3*280 + 'px ' + -Math.floor(i/3)*90 + 'px'
+
+//     setTimeout(run, 50)
+// }
+
+// run()
+    // let bgInfo = [
+    //     [0, 0],
+    //     [-280, 0],
+    //     [-560, 0],
+    //     [0, -90],
+    //     [-280, -90],
+    //     [-560, -90],
+    //     [0, -180],
+    //     [-280, -180],
+    //     [-560, -180],
+    //     [0, -270],
+    //     [-280, -270],
+    //     [-560, -270],
+    //     [0, -360],
+    //     [-280, -360],
+    //     [-560, -360],
+    //     [0, -450],
+    //     [-280, -450],
+    //     [-560, -450],
+    //     [0, -540],
+    //     [-280, -540],
+    //     [-280, -540],
+    //     [-560, -540],
+    //     [0, -630],
+    //     [-280, -630],
+    //     [-560, -630],
+    //     [0, -720]
+    // ]
+
+</script>
+<script>
+    let i = 1, j = 1
+    let div = document.getElementsByClassName('animate_div')[0]
+    let myDiv = document.getElementsByClassName('my_div')[0]
+
+    let className = 'ans_btn' + i, myClassName = 'bg' + j
+
+    const run = function () {
+        if (i > 25) {
+            i = 1
+        }
+        if (j > 20) {
+            j = 1
+        }
+
+        div.classList.remove(className)
+        className = 'ans_btn' + i
+        div.classList.add(className)
+
+        myDiv.classList.remove(myClassName)
+        myClassName = 'bg' + i
+        myDiv.classList.add(myClassName)
+
+        i++
+        j++
+
+        setTimeout(run, 50)
+    }
+
+    run()
+
+</script>

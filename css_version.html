@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            .animate_div {
+                width: 280px;
+                height: 90px;
+                background-image: url(./images/btn1_sprite.png);
+                background-repeat: no-repeat;
+
+                animation: play_x 300ms steps(3) infinite;
+                animation: play_y 900ms steps(8) infinite;
+            }
+
+            @keyframes play_x {
+                from {
+                    background-position: 0px 0;
+                }
+                to {
+                    background-position: -560px 0;
+                }
+            }
+            @keyframes play_y {
+                from {
+                    background-position: 0px 0;
+                }
+                to {
+                    background-position: 0 -720px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="animate_div"></div>
+    </body>
+</html>
